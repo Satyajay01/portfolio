@@ -43,7 +43,7 @@ const Contact = () => {
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://wa.me/917024993010?text=Hello"
+                      href="https://wa.me/917024993010"
                     >
                       <FontAwesomeIcon icon={faWhatsapp} color="green" /> <span> WhatsApp</span>
                     </a>
