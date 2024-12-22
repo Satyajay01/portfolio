@@ -1,5 +1,5 @@
 .logo-container {
-    z-index: 0;
+    z-index: -1;
     width: 400px;
     height: 609px;
     opacity: 0;
@@ -16,22 +16,29 @@
       bottom: 0;
       transform: rotateZ(30deg) !important;
     }
-  
-    // .solid-logo {
-    //   position: absolute;
-    //   top: auto;
-    //   right: auto;
-    //   bottom: auto;
-    //   left: 0;
-    //   margin: auto;
-    //   width: 100%;
-    //   opacity: 0;
-    //   transform: rotateZ(30deg) !important;
-    //   z-index: 1;
-    // }
   }
   
   .svg-container {
     stroke: #00ff26;
     stroke-width: 10;
   }
+
+  // ---Responsive Design
+@media (max-width: 768px) {
+  .logo-container {
+    svg {
+      width: 65vw;
+      height: auto;
+      margin-top: 20%;
+      margin-left: 40%;
+      bottom: 0;
+      transform: rotateZ(20deg) !important;
+    }
+  }
+
+  .svg-container {
+    stroke: #00ff26;
+    stroke-width: 2;
+    
+  }
+}
