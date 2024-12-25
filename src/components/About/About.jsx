@@ -21,32 +21,37 @@ const About = () => {
   }, [])
 
   return (
-    <div className="container about-page">
-      <div className="text-zone">
-        <h1>
+    <div className="main-container">
+      <div className="text-box">
+        <h1 className="animation-text-about">
           <AnimatedLetters
             letterClass={letterClass}
             strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-            idx={15}
+            idx={5}
           />
         </h1>
-        <p>
-          i'm very ambitious fresher Full-Stack developer looking for a role in
-          established IT company with the opportunity to work with the latest
-          technologies on challenging and diverse projects.
-        </p>
-        <p align="LEFT">
-          I have completed my graduation in <span className="skill-text">Bachelor of Computer Applications</span>
-          and also pursuing MSc Computer Science, and I have completed my Full
-          Stack Developer course, I also have <span className="skill-text">1 year of experience</span> as a <span className="skill-text">Computer
-          Technician.</span>
-        </p>
-        <p>
-          <h1 style={{ fontSize: '30px' }}>
+        <br />
+        <div className="info-text">
+          <p>
+            i'm very ambitious fresher Full-Stack developer looking for a role
+            in established IT company with the opportunity to work with the
+            latest technologies on challenging and diverse projects.
+          </p>
+          <p align="LEFT">
+            I have completed my graduation in{' '}
+            <span className="skill-text">
+              Bachelor of Computer Applications
+            </span>
+            and also pursuing MSc Computer Science, and I have completed my Full
+            Stack Developer course, I also have{' '}
+            <span className="skill-text">1 year of experience</span> as a{' '}
+            <span className="skill-text">Computer Technician.</span>
+          </p>
+          <h1 className="animation-text-skill" style={{ fontSize: '30px' }}>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['M', 'y', ' ', 'S', 'k', 'i', 'l', 'l', 's']}
-              idx={22}
+              idx={10}
             />
           </h1>
           <h3> Computer Technician:</h3>
@@ -78,10 +83,12 @@ const About = () => {
           <span className="skill-text"> ChatGPT </span>
           <span className="skill-text"> Postman </span>
           <span className="skill-text"> Vs Code </span>
-        </p>
+        </div>
       </div>
 
-      <div className="stage-cube-cont">
+    {/* ---------cube----------- */}
+      <div className="cube-box">
+        <div className='cube-contener'>
         <div className="cubespinner">
           <div className="face1">
             <FontAwesomeIcon
@@ -113,6 +120,7 @@ const About = () => {
           <div className="face6">
             <FontAwesomeIcon icon={faGitAlt} color="#F1502F" title="Git" />
           </div>
+        </div>
         </div>
       </div>
     </div>

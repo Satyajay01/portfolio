@@ -1,22 +1,124 @@
-.skill-text{
+
+.main-container {
+//   border: 1px solid red;
+  width: 80vw;
+  height: 100vh;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-box {
+//   border: 1px solid rgb(0, 250, 0);
+  width: 35vw;
+  height: 70vh;
+}
+.cube-box {
+//   border: 1px solid rgb(0, 8, 255);
+  width: 35vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation-text-about {
+  // color: #fff;
+  color: #009300;
+  font-size: 53px;
+  margin: 0;
+  font-family: Coolvetica;
+  font-weight: 400;
+}
+
+.animation-text-about::before {
+  content: '<h1>';
+  font-family: La Belle Aurore;
+  color:  #009300;
+  font-size: 18px;
+  margin-top: -15px;
+  position: absolute;
+  left: 180px;
+  animation: fadeIn 0.5s 0.5s backwards;
+}
+.animation-text-about::after {
+  content: '<h1/>';
+  font-family: 'La Belle Aurore';
+  color:  #009300;
+  font-size: 18px;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: -225px;
+  animation: fadeIn 0.5s 0.5s backwards;
+
+
+}
+
+.info-text{
+    color: rgba(255, 255, 255, 0.817);
+    margin-top: 20px;
+    font-weight: 400;
+    animation: fadeIn 0.5s 0.5s backwards;
+
+}
+
+.animation-text-skill{
+color: #009300;
+font-size: 53px;
+font-family: Coolvetica;
+font-weight: 400;
+margin-top: 30px;
+padding-bottom: 20px;
+
+}
+
+.animation-text-skill::before {
+    content: '<h2>';
+    font-family: La Belle Aurore;
+    color:  #009300;
+    font-size: 18px;
+    margin-top: -15px;
+    position: absolute;
+    left: 180px;
+    animation: fadeIn 0.5s 0.5s backwards;
+
+  }
+  .animation-text-skill::after {
+    content: '<h2/>';
+    font-family: 'La Belle Aurore';
+    color:  #009300;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: -125px;
+    animation: fadeIn 0.5s 0.5s backwards;
+
+  
+  }
+
+  .skill-text{
     border: 1px solid rgba(255, 255, 255, 0.119);
     margin-left: 5px;
-    background: #ffffff14;
+    background: #ffffff28;
     font-weight: 400;
 }
 .skill-text:hover{
     background: #3700ff49;
 }
+// -----------cube----------
+// -----------cube----------
 
-.stage-cube-cont{
-    width: 50%;
-    height: 100%;
-    top: 0;
-    padding-top: 18%;
-    margin-left: 0;
-    position: absolute;
-    right: 0;
-    overflow: hidden;
+    .cube-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.cube-contener{
+    height: 200px;
+    width: 200px;
+    animation: fadeIn 0.5s 0.5s backwards;
+
 }
 
 .cubespinner{
@@ -83,4 +185,3 @@
         transform: rotateY(90deg);
     }
 }
-
