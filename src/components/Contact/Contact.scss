@@ -1,3 +1,49 @@
+.about-contact{
+
+}
+.animation-text-contact {
+  // color: #fff;
+  color: #009300;
+  font-size: 53px;
+  margin: 0;
+  font-family: Coolvetica;
+  font-weight: 400;
+}
+
+.animation-text-contact::before {
+  content: '<h1>';
+  font-family: La Belle Aurore;
+  color:  #009300;
+  font-size: 18px;
+  margin-top: -15px;
+  position: absolute;
+  left: 150px;
+  animation: fadeIn 0.5s 0.5s backwards;
+}
+.animation-text-contact::after {
+  content: '<h1/>';
+  font-family: 'La Belle Aurore';
+  color:  #009300;
+  font-size: 18px;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: -270px;
+  animation: fadeIn 0.5s 0.5s backwards;
+}
+
+.text-zone-contac{
+  width: 30vw;
+  margin-left: 10vw;
+  margin-top: 20vh;
+  animation: fadeIn 0.8s 0.8s backwards;
+}
+.info-text{
+  color: rgba(255, 255, 255, 0.726);
+  margin-top: 20px;
+  font-weight: 400;
+
+}
+
 .contact-form {
   width: 100%;
   margin-top: 20px;
@@ -76,4 +122,33 @@
     border: 1px solid #00ff00;
     color: #00ff00;
   }
+}
+
+
+@media (max-width: 768px) {
+  .contact-container{
+    width: 75vw;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 20%;
+  }
+  .text-zone-contac{
+    width: 100%;
+    margin: 0;
+  }
+  .animation-text-contact{
+    font-size: 40px;
+  }
+  .animation-text-contact::before {
+    margin-top: -15px;
+    position: absolute;
+    left: 70px;
+  }
+  .animation-text-contact::after {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -210px;
+
+  }
+
 }

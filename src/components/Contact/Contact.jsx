@@ -45,16 +45,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="container contact-page">
-      <div className="text-zone">
-        <h1>
+    <div className="contact-container">
+      <div className="text-zone-contac">
+        <h1 className='animation-text-contact'>
           <AnimatedLetters
             letterClass={letterClass}
             strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e', '.']}
-            idx={15}
+            idx={10}
           />
-        </h1>
-        <p>
+        </h1> <br /> <br />
+        <p className='info-text'>
           I am specifically interested in web app project development and I
           need an internship or job. However, if you have any other requests or
           questions, please feel free to contact me using the form below.
