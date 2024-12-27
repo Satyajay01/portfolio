@@ -1,0 +1,60 @@
+.project-container {
+  width: 70vw;
+  margin-left: 10%;
+  margin-top: 100px;
+  
+}
+.animation-text-project {
+  // color: #fff;
+  color: #009300;
+  font-size: 53px;
+  margin: 0;
+  font-family: Coolvetica;
+  font-weight: 400;
+}
+
+.animation-text-project::before {
+  content: '<h1>';
+  font-family: La Belle Aurore;
+  color:  #009300;
+  font-size: 18px;
+  margin-top: -15px;
+  position: absolute;
+  left: 150px;
+  animation: fadeIn 0.5s 0.5s backwards;
+}
+.animation-text-project::after {
+  content: '<h1/>';
+  font-family: 'La Belle Aurore';
+  color:  #009300;
+  font-size: 18px;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: -240px;
+  animation: fadeIn 0.5s 0.5s backwards;
+}
+
+.project-heading{
+  color: rgba(255, 255, 255, 0.817);
+  font-weight: 400;
+  animation: fadeIn 0.5s 0.5s backwards;
+  font-size: 15px;
+}
+.project-img{
+  width: 300px;
+  height: auto;
+}
+
+.project{
+  display: flex;
+  gap: 20px;
+  color: rgba(255, 255, 255, 0.817);
+  font-weight: 400;
+  animation: fadeIn 0.5s 0.5s backwards;
+  transition: transform 0.3s ease;
+  
+}
+.project:hover {
+  transform: scale(1.1);
+  
+}

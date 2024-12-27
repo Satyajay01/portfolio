@@ -1,63 +1,65 @@
-import React, { useEffect, useState } from 'react';
-import './Contact.scss';
-import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
-import emailjs from 'emailjs-com';
+import React, { useEffect, useState } from 'react'
+import './Contact.scss'
+import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
-  const [letterClass, setLetterClass] = useState('text-animate');
+  const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass('text-animate-hover');
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, []);
+      setLetterClass('text-animate-hover')
+    }, 3000)
+    return () => clearTimeout(timer)
+  }, [])
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
   const sendMail = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault() // Prevent default form submission behavior
 
     const data = {
       to_name: name,
       to_email: email,
       message,
-    };
-    const serviceId = 'satyajay_email_serviceId';
-    const templateId = 'Satyajay_templateid';
-    const userId = 'yefBktnctXaY8sbkM';
+    }
+    const serviceId = 'satyajay_email_serviceId'
+    const templateId = 'Satyajay_templateid'
+    const userId = 'yefBktnctXaY8sbkM'
 
     emailjs.send(serviceId, templateId, data, userId).then(
       (response) => {
-        alert('Message sent successfully!');
-        console.log('Success:', response);
-        setName('');
-        setEmail('');
-        setMessage('');
+        alert('Message sent successfully!')
+        console.log('Success:', response)
+        setName('')
+        setEmail('')
+        setMessage('')
       },
       (error) => {
-        alert('Failed to send message. Please try again.');
-        console.log('Error:', error);
+        alert('Failed to send message. Please try again.')
+        console.log('Error:', error)
       }
-    );
-  };
+    )
+  }
 
   return (
     <div className="contact-container">
       <div className="text-zone-contac">
-        <h1 className='animation-text-contact'>
+        <h1 className="animation-text-contact">
           <AnimatedLetters
             letterClass={letterClass}
             strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e', '.']}
             idx={10}
           />
-        </h1> <br /> <br />
-        <p className='info-text'>
-          I am specifically interested in web app project development and I
-          need an internship or job. However, if you have any other requests or
-          questions, please feel free to contact me using the form below.
+        </h1>{' '}
+        <br /> <br />
+        <p className="info-text">
+          I am particularly interested in web app project development and I need
+          an internship or job. You can call me on +91<a className='call_number' href="tel:+91 7024993010">7024993010</a> number, Also
+          if you have any other requests or questions please feel free to
+          contact me using the form below.
         </p>
         <div className="contact-form">
           <form onSubmit={sendMail}>
@@ -101,7 +103,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

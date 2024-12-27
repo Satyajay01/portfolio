@@ -38,13 +38,13 @@ const About = () => {
             latest technologies on challenging and diverse projects.
           </p>
           <p align="LEFT">
-            I have completed my graduation in{' '}
+            I have completed my graduation in
             <span className="skill-text">
               Bachelor of Computer Applications
             </span>
-            and also pursuing MSc Computer Science, and I have completed my Full
-            Stack Developer course, I also have{' '}
-            <span className="skill-text">1 year of experience</span> as a{' '}
+            and also pursuing MSc Computer Science, and I have completed my <span  className="skill-text">Full
+            Stack Developer course</span>, I also have
+            <span className="skill-text">1 year of experience</span> as a
             <span className="skill-text">Computer Technician.</span>
           </p>
           <h1 className="animation-text-skill" style={{ fontSize: '30px' }}>

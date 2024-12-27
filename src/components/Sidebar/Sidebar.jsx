@@ -2,7 +2,7 @@ import React from 'react'
 import './Sidebar.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_subS.png'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser,faFolderOpen } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link, NavLink } from 'react-router-dom'
 import {
@@ -30,6 +30,17 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
+
+        {/* ------------ */}
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="project-link"
+          to="/project"
+        >
+          <FontAwesomeIcon icon={faFolderOpen} color="#4d4d4e" />
+        </NavLink>
+        {/* ------------------ */}
         <NavLink
           exact="true"
           activeclassname="active"
@@ -41,11 +52,7 @@ const Sidebar = () => {
       </nav>
       <ul>
         <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://wa.me/917024993010"
-          >
+          <a target="_blank" rel="noreferrer" href="https://wa.me/917024993010">
             <FontAwesomeIcon icon={faWhatsapp} color="#4d4d4e" />
           </a>
         </li>
