@@ -63,7 +63,7 @@ const Home = () => {
         <Link to="/contact" className="flat-button btn41-43 btn-43">
           Contact Me
         </Link>
-        <a href="https://drive.google.com/uc?export=download&id=1eUsbNNgxEdce6oCl-aBmSIkyZDvTh1uo" className="flat-button btn41-43 btn-43">
+        <a href="https://drive.google.com/uc?export=download&id=1fEegiT8NnndS4ZeO9pYYep6q_qGbeHav" className="flat-button btn41-43 btn-43">
           Resume Dow.
         </a>
       </div>
